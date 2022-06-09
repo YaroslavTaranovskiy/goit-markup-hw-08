@@ -1,0 +1,146 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #000000;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    margin-right: 93px;
+}
+
+.text-logo {
+    color: var(--accent-color);
+}
+
+.site-nav .logo {
+    display: block;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.site-nav.list {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.site-nav .link {
+    position: relative;
+    display: block;
+    color: var(--title-text-color);
+    font-weight: var(--medium-font-weight);
+
+
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+
+    }
+}
+
+.site-nav .nav-item {
+    margin-right: 50px;
+
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.site-nav .link.current {
+    color: var(--accent-color);
+
+    &::after {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    
+    
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    
+    }
+}
+
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    list-style: none;
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+}
+
+.contact .contact-item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.contact .link {
+    display: flex;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: color var(--transition),
+    fill var(--transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    
+    }
+}
+
+.link .header-icon {
+    fill: currentColor;
+
+    margin-right: 10px;
+}

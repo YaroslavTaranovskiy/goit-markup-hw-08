@@ -1,0 +1,32 @@
+.social {
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+
+    align-items: center;
+    justify-content: center;
+
+    fill: #AFB1B8;
+
+    transition: background-color var(--transition),
+    fill var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: #fff;
+    
+    }
+}
+
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}

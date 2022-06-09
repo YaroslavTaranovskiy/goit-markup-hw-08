@@ -1,0 +1,37 @@
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 15px;
+
+    outline: 2px solid var(--title-text-color);
+    outline-offset: -2px;
+    border-radius: 2px;
+
+    transition: outline-color var(--transition),
+    background-color var(--transition);
+
+
+    .checkbox:checked+& {
+        outline-color: var(--accent-color);
+        background-color: var(--accent-color);
+    }
+}
+
+.treaty {
+    color: var(--accent-color);
+}
+
+
+.custom-checkbox-icon {
+    opacity: 0;
+
+    transition: opacity var(--transition);
+
+
+    .checkbox:checked+.custom-checkbox & {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,27 @@
+// utils
+@import './utils/vars';
+@import './utils/visually-hidden';
+
+// base styles
+@import './base/comon';
+@import './base/reset';
+@import './base/container';
+
+// components
+@import './components/hero-btn';
+@import './components/modal-wrapper';
+@import './components/modal-form';
+@import './components/custom-chekbox';
+@import './components/social-link-group';
+@import './components/subscribe-form';
+@import './components/prtfolio-btn';
+
+// layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/benefits-section';
+@import './layouts/work-section';
+@import './layouts/team-section';
+@import './layouts/client-section';
+@import './layouts/footer-section';
+@import './layouts/portfolio-page';
