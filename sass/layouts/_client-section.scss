@@ -5,7 +5,8 @@
 */
 
 .client {
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     @include mq(desktop) {
         padding-top: 94px;
@@ -17,11 +18,16 @@
     color: var(--title-text-color);
 
     font-weight: var(--bold-font-weight);
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include mq(desktop) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 .client__list {
@@ -30,10 +36,30 @@
 
     padding: 0;
     margin: 0;
+
+    @include mq(not-desktop) {
+        
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
-.client__item:not(:last-child) {
-    margin-right: 30px;
+.client__item {
+    margin: 15px;
+
+    
+
+    @include mq(desktop) {
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    &:last-child {
+        @include mq(desktop) {
+            margin-right: 0;
+        }
+    }    
+    
 }
 
 .client__link {
@@ -41,7 +67,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     border: 1px solid #AFB1B8;
@@ -51,6 +77,14 @@
 
     transition: border-color var(--transition),
     fill var(--transition);
+
+    @include mq(tablet) {
+        width: 226px;
+    }
+
+    @include mq(desktop) {
+        width: 170px;
+    }
 
     
     &:hover,
