@@ -1,11 +1,21 @@
 .container {
     /* outline: 1px solid red; */
 
-    width: 1200px;
-
     padding-left: 15px;
     padding-right: 15px;
 
     margin-right: auto;
     margin-left: auto;
+
+    @include mq(mobile) {
+        width: 480px;
+    }
+
+    @include mq(tablet) {
+        width: 768px;
+    }
+
+    @include mq(desktop) {
+        width: 1200px;
+    }
 }
