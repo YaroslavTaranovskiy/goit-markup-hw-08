@@ -15,7 +15,10 @@
     text-align: center;
     
     @include mq(tablet) {
-
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
     }
 
     @include mq(desktop) {
@@ -29,7 +32,9 @@
 
 .footer-container {
 
-    
+    @include mq(tablet) {
+        margin-right: 165px;
+    }
 
     @include mq(desktop) {
         width: 231px;

@@ -54,11 +54,15 @@
         color: var(--accent-color)
     }
 
+    @include mq(tablet) {
+        width: 450px;
+    }
+
     @include mq(desktop) {
         width: 358px;
-        
     }
 }
+        
 
 
 .btn-subscribe {
