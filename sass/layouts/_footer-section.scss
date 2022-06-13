@@ -1,5 +1,6 @@
 .footer {
     display: flex;
+    
 
     background-color: #2f303a;
 
@@ -9,13 +10,31 @@
 
 .footer-box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    @include mq(tablet) {
 
-    align-items: baseline;
+    }
+
+    @include mq(desktop) {
+        flex-direction: row;
+        align-items: baseline;
+        
+    }
 }
 
+
+
 .footer-container {
-    width: 231px;
-    margin-right: 70px;
+
+    
+
+    @include mq(desktop) {
+        width: 231px;
+        margin-right: 70px; 
+    }
 }
 
 .footer-container .logo {
@@ -30,6 +49,8 @@
     font-style: normal;
     /* костиль розібратися */
     line-height: 21px;
+
+    margin-bottom: 60px;
 }
 
 .footer-address {
@@ -69,7 +90,11 @@
 
 
 .follow {
-    margin-right: 93px;
+    margin-bottom: 60px;
+
+    @include mq(desktop) {
+        margin-right: 93px;
+    }
 }
 
 .title-follow {

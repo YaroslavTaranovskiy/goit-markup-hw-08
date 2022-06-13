@@ -15,7 +15,10 @@
     line-height: 1.19;
     text-decoration: none;
 
-    margin-right: 93px;
+    @include mq(desktop) {
+        margin-right: 93px;
+        
+    }
 }
 
 .text-logo {
