@@ -1,0 +1,23 @@
+.mobile-menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+.mobile-menu-btn .icon-cross {
+    display: none;
+}
+
+.mobile-menu-btn.is-open .icon-cross {
+    display: block;
+}
+
+.mobile-menu-btn.is-open .icon-menu {
+    display: none;
+}
