@@ -464,6 +464,7 @@ img {
 @media screen and (min-width: 1200px) {
   .form-place {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -533,6 +534,35 @@ img {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu__contatcts {
+  margin-top: auto;
 }
 
 .header {
@@ -1096,13 +1126,9 @@ Work section BEM
 
 @media screen and (min-width: 1200px) {
   .footer-box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
@@ -1170,6 +1196,7 @@ Work section BEM
 @media screen and (min-width: 1200px) {
   .follow {
     margin-right: 93px;
+    width: 300px;
   }
 }
 

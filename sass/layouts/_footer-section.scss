@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+        
     @include mq(tablet) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -22,9 +22,8 @@
     }
 
     @include mq(desktop) {
-        flex-direction: row;
-        align-items: baseline;
-        
+        flex-wrap: nowrap;
+        text-align: left;
     }
 }
 
@@ -99,6 +98,7 @@
 
     @include mq(desktop) {
         margin-right: 93px;
+        width: 300px;
     }
 }
 

@@ -29,6 +29,7 @@
 
     @include mq(desktop) {
         flex-direction: row;
+        
     }
 }
 
@@ -60,6 +61,7 @@
 
     @include mq(desktop) {
         width: 358px;
+        margin-bottom: 0;
     }
 }
         
