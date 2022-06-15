@@ -37,21 +37,22 @@
                 <a href="" class="link">Контакты</a>
             </li>
           </ul>
-          <button type="button" class="mobile-menu-btn is-open" data-menu-button>
+
+          <!-- Mobile menu -->
+          <button type="button" class="mobile-menu-btn" aria-controls="mobile-menu" data-menu-button>
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
               <use class="icon-cross" href="./imeges/icon/sprite.svg#icon-close-mobile-menu"></use>
               <use class="icon-menu" href="./imeges/icon/sprite.svg#icon-mobile-menu"></use>
             </svg>
           </button>
 
-          <!-- Mobile menu -->
-          <div class="mobile-menu">
+          <div class="mobile-menu" id="mobile-menu" data-menu>
                 <ul class="mobile-menu__nav">
                   <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Студия </a>
+                    <a href="./index.html" class="mobile-menu__link current">Студия </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Портфолио</a>
+                    <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
                   </li>
                   <li class="mobile-menu__item">
                     <a href="" class="mobile-menu__link">Контакты</a>
@@ -475,7 +476,7 @@
         </div>
         <div class="follow">
           <h3 class="title title-follow">Присоединяйтесь</h3>
-          <ul class="section-list">
+          <ul class="folow-list">
             <li class="follow-item">
               <a class="follow-link" href="" aria-label="иконка Instagram">
                 <svg class="social-icon" width="20" height="20">

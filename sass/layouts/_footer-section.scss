@@ -102,6 +102,15 @@
     }
 }
 
+.folow-list {
+    list-style: none;
+    display: flex;
+    
+    
+    padding: 0;
+    margin: 0;
+}
+
 .title-follow {
     color: var(--white-text);
     text-transform: uppercase;

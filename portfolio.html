@@ -36,6 +36,50 @@
               <a href="" class="link">Контакты</a>
             </li>
           </ul>
+    
+          <!-- Mobile menu -->
+          <button type="button" class="mobile-menu-btn" aria-controls="mobile-menu" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./imeges/icon/sprite.svg#icon-close-mobile-menu"></use>
+              <use class="icon-menu" href="./imeges/icon/sprite.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+    
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link">Студия </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link current">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__contatcts">
+              <li class="mobile-menu__item">
+                <a href="tel:+380961111111" class="contatcts__link telefon">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="mailto:info@devstudio.com" class="contatcts__link e-mail">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__socials socials">
+              <li class="socials__item">
+                <a href="" class="socials__link">Instagram </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">Twitter</a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">Facebook</a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
     
         <ul class="contact">
@@ -243,7 +287,7 @@
         </div>
         <div class="follow">
           <h3 class="title title-follow">Присоединяйтесь</h3>
-          <ul class="section-list">
+          <ul class="folow-list">
             <li class="follow-item">
               <a class="follow-link" href="" aria-label="иконка Instagram">
                 <svg class="social-icon" width="20" height="20">
@@ -267,7 +311,7 @@
             </li>
             <li class="follow-item">
               <a class="follow-link" href="" aria-label="иконка Linkedin">
-                <svg class="social-icon" class="social-icon" width="20" height="20">
+                <svg class="social-icon" width="20" height="20">
                   <use href="./imeges/icon/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -275,20 +319,22 @@
           </ul>
     
         </div>
-        <div class="subscribe">
+        <form class="subscribe">
           <b class="title title-subscribe">Подпишитесь на рассылку</b>
           <div class="subscribe-form">
-            <input type="email" name="" placeholder="E-mail" class="form-place">
+            <input type="email" name="user-mail" placeholder="E-mail" class="form-place">
             <button type="submit" class="btn-subscribe">
-              <p class="btn-subscribe-text">Подписаться</p>
+              <span class="btn-subscribe-text">Подписаться</span>
               <!-- <svg class="subscribe-icon" width="24" height="24">
                     <use href="./imeges/icon/sprite.svg#icon-send-footer"></use>
                   </svg> -->
             </button>
           </div>
-        </div>
+        </form>
       </div>
     
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

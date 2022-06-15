@@ -16,6 +16,10 @@
     line-height: 1.19;
     text-decoration: none;
 
+    @include mq(tablet) {
+        margin-right: 88px;
+    }
+
     @include mq(desktop) {
         margin-right: 93px;
         
@@ -128,35 +132,54 @@
     @include mq(mobile-only) {
         display: none;
     }
+
+    @include mq(tablet-only) {
+        flex-direction: column;
+    }
 }
 
 .contact .contact-item {
-    margin-right: 50px;
+    margin-bottom: 10px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
 
-    &:last-child {
-        margin-right: 0;
+    @include mq(desktop) {
+        margin-right: 50px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+
     }
 }
 
 
 .contact .link {
-    display: flex;
+    text-decoration: none;
     color: var(--primary-text-color);
     font-style: normal;
+    font-size: 12px;
     font-weight: var(--medium-font-weight);
-    line-height: 1.14;
     letter-spacing: 0.02em;
+    line-height: 1.17;
+    
+    display: flex;
+    
+    @include mq(desktop) {
+        font-size: 14px;
+        line-height: 1.14;
 
-    text-decoration: none;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    align-items: center;
-    justify-content: center;
-
-    transition: color var(--transition),
-    fill var(--transition);
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        align-items: center;
+        justify-content: center;
+    
+        transition: color var(--transition),
+        fill var(--transition);
+    }
 
     &:hover,
     &:focus {
