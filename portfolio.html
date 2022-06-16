@@ -38,14 +38,19 @@
           </ul>
     
           <!-- Mobile menu -->
-          <button type="button" class="mobile-menu-btn" aria-controls="mobile-menu" data-menu-button>
+          <button type="button" class="mobile-menu-btn js-open-menu" aria-controls="mobile-menu">
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="./imeges/icon/sprite.svg#icon-close-mobile-menu"></use>
+              <!-- <use class="icon-cross" href="./imeges/icon/sprite.svg#icon-close-mobile-menu"></use> -->
               <use class="icon-menu" href="./imeges/icon/sprite.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-    
-          <div class="mobile-menu" id="mobile-menu" data-menu>
+          
+          <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu-btn js-close-menu" aria-controls="mobile-menu">
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./imeges/icon/sprite.svg#icon-close-mobile-menu"></use>
+              </svg>
+            </button>
             <ul class="mobile-menu__nav">
               <li class="mobile-menu__item">
                 <a href="./index.html" class="mobile-menu__link">Студия </a>
@@ -470,6 +475,6 @@
     
     </footer>
 
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
