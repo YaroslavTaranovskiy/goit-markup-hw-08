@@ -812,7 +812,7 @@ img {
 
 .site-nav .link.current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: -3px;
   left: 0;
   content: '';
   display: block;
@@ -820,6 +820,12 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav .link.current::after {
+    bottom: -6px;
+  }
 }
 
 .site-nav {
