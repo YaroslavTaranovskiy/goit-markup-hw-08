@@ -39,6 +39,7 @@
         width: 231px;
         margin-right: 70px; 
     }
+
 }
 
 .footer-container .logo {
@@ -55,6 +56,10 @@
     line-height: 21px;
 
     margin-bottom: 60px;
+
+    @include mq(desktop) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-address {
@@ -98,6 +103,7 @@
 
     @include mq(desktop) {
         margin-right: 93px;
+        margin-bottom: 0;
         width: 300px;
     }
 }

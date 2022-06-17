@@ -179,7 +179,6 @@ img {
   top: 50%;
   left: 50%;
   opacity: 1;
-  width: 450px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -191,6 +190,12 @@ img {
   transition: opacity var(--transition) 200ms, -webkit-transform var(--transition) 200ms;
   transition: transform var(--transition) 200ms, opacity var(--transition) 200ms;
   transition: transform var(--transition) 200ms, opacity var(--transition) 200ms, -webkit-transform var(--transition) 200ms;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -573,6 +578,8 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 
 .mobile-menu-btn:focus, .mobile-menu-btn:hover {
@@ -586,6 +593,9 @@ img {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -657,7 +667,7 @@ img {
 .mobile-menu__contatcts {
   list-style: none;
   padding: 0;
-  margin-top: 302px;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -690,6 +700,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__socials {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .socials__item {
@@ -1277,6 +1296,9 @@ Work section BEM
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -1316,13 +1338,19 @@ Work section BEM
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
+  width: 130px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
   -webkit-transition: border-color var(--transition), fill var(--transition);
   transition: border-color var(--transition), fill var(--transition);
+}
+
+@media screen and (min-width: 480px) {
+  .client__link {
+    width: 210px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1417,6 +1445,12 @@ Work section BEM
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    margin-bottom: 0;
+  }
+}
+
 .footer-address {
   margin-bottom: 9px;
 }
@@ -1454,6 +1488,7 @@ Work section BEM
 @media screen and (min-width: 1200px) {
   .follow {
     margin-right: 93px;
+    margin-bottom: 0;
     width: 300px;
   }
 }
@@ -1530,6 +1565,7 @@ Work section BEM
 .title.project-name {
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 
@@ -1582,6 +1618,10 @@ Work section BEM
 .portfolio-link:hover, .portfolio-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-img {
+  max-width: 100%;
 }
 
 .text-box {

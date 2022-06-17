@@ -39,6 +39,7 @@
 .client__list {
     list-style: none;
     display: flex;
+    justify-content: center;
 
     padding: 0;
     margin: 0;
@@ -52,7 +53,7 @@
 
 .client__item {
     margin: 15px;
-
+    
     
 
     @include mq(desktop) {
@@ -73,8 +74,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 210px;
+    width: 130px;
     height: 92px;
+    // width: calc((100vw -2 * 30px) /2);
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -83,6 +85,10 @@
 
     transition: border-color var(--transition),
     fill var(--transition);
+
+    @include mq(mobile) {
+        width: 210px;
+    }
 
     @include mq(tablet) {
         width: 226px;

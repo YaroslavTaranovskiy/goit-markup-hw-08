@@ -5,6 +5,8 @@
     border: none;
     background-color: transparent;
 
+    transition: fill var(--transition);
+
     &:focus,
     &:hover {
         fill: var(--accent-color);
