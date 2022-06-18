@@ -93,6 +93,8 @@
 
     padding: 20px 24px;
 
+    
+
 }
 
 
@@ -129,11 +131,15 @@
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: var(--regular-font-weight);
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.56;
     letter-spacing: 0.03em;
 
     color: var(--white-text);
+
+    @include mq(mobile) {
+        font-size: 15px;
+    }
 
 }
 

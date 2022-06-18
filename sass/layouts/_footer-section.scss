@@ -19,6 +19,7 @@
         flex-wrap: wrap;
         align-items: baseline;
         justify-content: center;
+        
     }
 
     @include mq(desktop) {
@@ -33,6 +34,7 @@
 
     @include mq(tablet) {
         margin-right: 165px;
+        
     }
 
     @include mq(desktop) {
@@ -47,6 +49,11 @@
     color: var(--white-text);
 
     margin-bottom: 20px;
+    
+    @include mq(tablet-only) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .footer-nav {
