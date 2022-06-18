@@ -93,10 +93,13 @@
 
     padding: 20px 24px;
 
-    
-
 }
 
+.first-project {
+    @include mq(tablet-only) {
+        padding-bottom: 56px;
+    }
+}
 
 
 .overlay {

@@ -76,7 +76,11 @@
     padding: 0;
     
     margin-top: auto;
-    margin-bottom: 64px;
+    margin-bottom: 24px;
+
+    @include mq(mobile) {
+        margin-bottom: 64px;
+    }
 }
 .contatcts__link {
     text-decoration: none;
