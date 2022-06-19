@@ -48,6 +48,7 @@
     @include mq(tablet) {
         width: calc((100% - 2 * 30px) / 2);
         margin: 15px;
+
     }
 
     @include mq(desktop) {
@@ -68,7 +69,10 @@
 }
 
 .portfolio-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
 
     transition: box-shadow var(--transition);
 
@@ -92,13 +96,7 @@
     border-left: 1px solid #eeeeee;
 
     padding: 20px 24px;
-
-}
-
-.first-project {
-    @include mq(tablet-only) {
-        padding-bottom: 56px;
-    }
+    flex-grow: 1;
 }
 
 
